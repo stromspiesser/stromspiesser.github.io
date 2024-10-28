@@ -24,27 +24,27 @@
 }
 
 /* Dark theme */
-@media (prefers-color-scheme: dark) {
-  :root,
-  ::backdrop {
-    color-scheme: dark;
-    --bg: #212121;
-    --accent-bg: #2b2b2b;
-    --text: #dcdcdc;
-    --text-light: #ababab;
-    --accent: #ffb300;
-    --accent-hover: #ffe099;
-    --accent-text: var(--bg);
-    --code: #f06292;
-    --preformatted: #ccc;
-    --disabled: #111;
-  }
-  /* Add a bit of transparency so light media isn't so glaring in dark mode */
-  img,
-  video {
-    opacity: 0.8;
-  }
-}
+/* @media (prefers-color-scheme: dark) { */
+/*   :root, */
+/*   ::backdrop { */
+/*     color-scheme: dark; */
+/*     --bg: #212121; */
+/*     --accent-bg: #2b2b2b; */
+/*     --text: #dcdcdc; */
+/*     --text-light: #ababab; */
+/*     --accent: #ffb300; */
+/*     --accent-hover: #ffe099; */
+/*     --accent-text: var(--bg); */
+/*     --code: #f06292; */
+/*     --preformatted: #ccc; */
+/*     --disabled: #111; */
+/*   } */
+/*   /\* Add a bit of transparency so light media isn't so glaring in dark mode *\/ */
+/*   img, */
+/*   video { */
+/*     opacity: 0.8; */
+/*   } */
+/* }  */
 
 /* Reset box-sizing */
 *, *::before, *::after {
@@ -709,4 +709,47 @@ sub {
   border-radius: var(--standard-border-radius);
   padding: 1.5rem;
   margin: 2rem 0;
+}
+
+
+/* meine hinzufügungen */
+/* Set basic positioning for the menu container */
+#link-menu {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    display: flex;
+    align-items: center; /* Aligns items vertically in the middle */
+    gap: 15px; /* Adds space between h2 and the links */
+}
+
+/* Styling for the heading */
+#link-menu h2 {
+    margin: 0;
+    font-size: 1.5em;
+    color: #212121; /* Adjust color as needed */
+}
+
+/* Styling for the text and list of links */
+#text-table-of-contents {
+    display: flex;
+    gap: 10px; /* Space between list items */
+}
+
+#text-table-of-contents ul {
+    list-style: none; /* Remove bullets */
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 10px; /* Space between each link */
+}
+
+#text-table-of-contents a {
+    color: #0d47a1; /* Link color */
+    text-decoration: none;
+}
+
+#text-table-of-contents a:hover {
+    color: #1266e2; /* Hover color */
+    text-decoration: underline;
 }
